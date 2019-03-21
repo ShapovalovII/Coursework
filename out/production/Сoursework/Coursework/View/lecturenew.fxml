@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Coursework.Controller.LectureNew">
+   <children>
+      <AnchorPane layoutY="120.0" prefHeight="480.0" prefWidth="900.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <TextArea fx:id="newTextLecture" layoutX="23.0" layoutY="93.0" prefHeight="296.0" prefWidth="859.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 5;" />
+            <Label layoutX="55.0" layoutY="39.0" text="Введите название лекции:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newNameLecture" layoutX="271.0" layoutY="39.0" prefHeight="27.0" prefWidth="350.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 5;" />
+            <Button fx:id="backButton" layoutX="23.0" layoutY="416.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 5;" text="Назад">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="saveLectureButton" layoutX="742.0" layoutY="416.0" mnemonicParsing="false" onAction="#saveLecture" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 5;" text="Сохранить">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="217.0" layoutY="32.0" text="Создание новой лекции" textFill="WHITE">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

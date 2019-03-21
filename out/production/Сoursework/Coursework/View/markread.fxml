@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Coursework.Controller.MarkRead">
+   <children>
+      <AnchorPane layoutY="129.0" prefHeight="380.0" prefWidth="700.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="backButton" layoutX="2.0" layoutY="323.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 5;" text="Назад">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tableView" layoutX="259.0" layoutY="8.0" prefHeight="364.0" prefWidth="315.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 5;">
+              <columns>
+                <TableColumn fx:id="nameLectureColonum" prefWidth="197.0" text="Список лекций" />
+                <TableColumn fx:id="markInQuestionColonum" prefWidth="116.0" text="Результат" />
+              </columns>
+            </TableView>
+            <TextField fx:id="lookStudent" layoutX="15.0" layoutY="107.0" prefHeight="27.0" prefWidth="227.0" promptText="Введите фамилию Студента" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 5;" />
+            <Button fx:id="lookMarkButton" layoutX="37.0" layoutY="165.0" mnemonicParsing="false" onAction="#lookMark" prefHeight="50.0" prefWidth="183.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 5;" text="Смотреть оценки">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="276.0" layoutY="36.0" text="Оценки" textFill="WHITE">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
